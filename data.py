@@ -49,4 +49,4 @@ fig = px.line(df, x='Date', y=['CDU/CSU', 'SPD', 'GRÜNE', 'FDP', 'LINKE', 'Sons
 fig.add_vline(x='2007-04-20', line=dict(color='red', width=2))
 
 # Show the plot
-fig.show()
+fig.write_image("political_party_polls.png")
